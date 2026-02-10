@@ -1,5 +1,3 @@
-# Number Guessing Game
-
 
 """ count = 1
 
@@ -24,3 +22,13 @@ while count >=1:
 while favorite_color != "Stop":
     favorite_color = input("What is your favorite color? (Type 'stop' to finish):")
 print("Okay") """
+
+# Number Guessing Game
+
+import random
+random_int = random.randint(1,10)
+print(random_int)
+guess = ""
+while guess != random_int:
+    guess_num = input("Guess a random number from 1-10")
+print("You Guessed Correctly")
