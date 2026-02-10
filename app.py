@@ -19,8 +19,8 @@ while count >=1:
     print("This is loop number", count)
     count = count-1 """
 
-favorite_color = ""
+""" favorite_color = ""
 
-while favorite_color != "stop":
-    favorite_color = input("What is your favorite color? (Type Stop to finish):")
-print("Okay")
+while favorite_color != "Stop":
+    favorite_color = input("What is your favorite color? (Type 'stop' to finish):")
+print("Okay") """
