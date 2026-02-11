@@ -28,7 +28,16 @@ print("Okay") """
 import random
 random_int = random.randint(1,10)
 print(random_int)
-guess = ""
-while guess != random_int:
-    guess_num = input("Guess a random number from 1-10")
+guess_num = int(input("Guess a random number from 1-10"))
+
+while guess_num != random_int:
+    if guess_num != random_int:
+        guess_history = [guess_num]
+        if guess_num > random_int:
+            print("Number is less than")
+    
+        else:
+            print("Number is greater than")
+    print(guess_num)
 print("You Guessed Correctly")
+
