@@ -35,10 +35,12 @@ while guess_num != random_int:
     if guess_num != random_int:
         guess_history = [guess_num]
         if guess_num > random_int:
-            print("Number is less than")
-    
+            print(f"Number is less than {guess_num}")
+            print("Guess again")
         else:
-            print("Number is greater than")
+            print(f"Number is greater than {guess_num}")
+            print("Guess Again")
     print(guess_num)
+
 print("You Guessed Correctly")
 
