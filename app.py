@@ -28,16 +28,22 @@ print("Okay") """
 
 import random
 random_int = random.randint(1,10)
-print(random_int)
-guess_num = int(input("Guess a random number from 1-10(Inclusive)"))
+guess_num = 0
 
 while guess_num != random_int:
-    if guess_num != random_int:
-        guess_history = [guess_num]
+    guess_num = int(input("Guess a random number from 1-10(Inclusive)"))
     if guess_num > random_int:
-        print(f"Number is less than {guess_num} Guess Again")    
+        print(f"{guess_num} is greater than the number")
+        guess_history = ["Guess History:"]
+        for i in range(i):
+            guess_history.append(guess_num)
+    elif guess_num == random_int:
+        print("You Guessed Correctly")
     else:
-        print(f"Number is greater than {guess_num} Guess Again")
-    
-print("You Guessed Correctly!")
+        print(f"{guess_num} is less than the number")
+        guess_history = ["Guess History:"]
+        for i in range(i):
+            guess_history.append(guess_num)
 
+
+print(guess_history)
