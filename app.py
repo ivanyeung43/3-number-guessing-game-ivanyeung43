@@ -35,14 +35,14 @@ while guess_num != random_int:
     if guess_num > random_int:
         print(f"{guess_num} is greater than the number")
         guess_history = ["Guess History:"]
-        for i in range(i):
+        for i in range(5):
             guess_history.append(guess_num)
     elif guess_num == random_int:
         print("You Guessed Correctly")
     else:
         print(f"{guess_num} is less than the number")
         guess_history = ["Guess History:"]
-        for i in range(i):
+        for i in range(5):
             guess_history.append(guess_num)
 
 
