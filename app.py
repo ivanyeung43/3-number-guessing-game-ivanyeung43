@@ -34,16 +34,14 @@ while guess_num != random_int:
     guess_num = int(input("Guess a random number from 1-10(Inclusive)"))
     if guess_num > random_int:
         print(f"{guess_num} is greater than the number")
-        guess_history = ["Guess History:"]
-        for i in range(5):
-            guess_history.append(guess_num)
     elif guess_num == random_int:
-        print("You Guessed Correctly")
+        print("You guessed Correctly")
     else:
         print(f"{guess_num} is less than the number")
+    if guess_num > random_int or guess_num < random_int:
         guess_history = ["Guess History:"]
-        for i in range(5):
-            guess_history.append(guess_num)
+        guess_history.append(guess_num)
+        print(guess_history)
 
-
+print("You guessed correctly!")
 print(guess_history)
