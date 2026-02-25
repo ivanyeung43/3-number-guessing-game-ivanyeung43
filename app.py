@@ -43,5 +43,5 @@ while guess_num != random_int:
         x = 0
         for i in range(x + 1):
             guess_history.append(guess_num)
-        print(guess_history)
+    print(guess_history)
 print(guess_history)
