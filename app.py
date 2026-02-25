@@ -29,7 +29,7 @@ print("Okay") """
 import random
 random_int = random.randint(1,10)
 guess_num = 0
-
+guess_history = ['Guess History:']
 while guess_num != random_int:
     guess_num = int(input("Guess a random number from 1-10"))
     if guess_num > random_int:
@@ -39,9 +39,8 @@ while guess_num != random_int:
     else:
         print(f"{guess_num} is less than the number")
     if guess_num > random_int or guess_num < random_int:
-        guess_history = ['Guess History:']
         x = 0
         for i in range(x + 1):
             guess_history.append(guess_num)
-    print(guess_history)
+    print("Your Guess History")
 print(guess_history)
